@@ -1,0 +1,5 @@
+/* not(:first-of-type) -- will take all the sibblings occurrence except the first one */
+:host:not(:first-of-type){
+    margin-top: 20px;
+    display: block;
+}

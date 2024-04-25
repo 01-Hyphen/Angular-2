@@ -1,0 +1,12 @@
+.actions:empty{
+    display: none;
+}
+
+
+.default-actions{
+    display: none;
+}
+
+.actions:empty + .default-actions{
+    display: block;
+}

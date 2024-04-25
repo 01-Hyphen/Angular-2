@@ -1,0 +1,39 @@
+<div class="ui dimmer visible active">
+    <div class="ui modal visible active">
+        <i class="close icon" (click)="onCloseClick()"></i>
+       <ng-content select="[header]"></ng-content>
+        <div class="content">
+            <ng-content></ng-content>
+        </div>
+        
+        <div class="actions">
+            <ng-content select="[modalFooter]"></ng-content>
+        </div>
+
+        <div class="actions default-actions">
+            <button class="ui button" (click)="onCloseClick()">
+                OK
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="ui basic modal">
+    <div class="ui icon header">
+      <i class="archive icon"></i>
+      Archive Old Messages
+    </div>
+    <div class="content">
+      <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
+    </div>
+    <div class="actions">
+      <div class="ui red basic cancel inverted button">
+        <i class="remove icon"></i>
+        No
+      </div>
+      <div class="ui green ok inverted button">
+        <i class="checkmark icon"></i>
+        Yes
+      </div>
+    </div>
+  </div> -->
